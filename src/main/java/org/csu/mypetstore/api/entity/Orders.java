@@ -17,7 +17,7 @@ public class Orders {
     @TableField(value = "userid")
     private String username;
     @TableField(value = "orderdate")
-    private Date orderDate;
+    private String orderDate;
     @TableField(value = "shipaddr1")
     private String shipAddress1;
     @TableField(value = "shipaddr2")

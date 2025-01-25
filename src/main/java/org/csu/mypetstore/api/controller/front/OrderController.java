@@ -56,7 +56,7 @@ public class OrderController {
     @ResponseBody
     public CommonResponse<String> insertOrder(
             @PathVariable("id") String username,
-            @RequestParam Date orderDate,
+            @RequestParam String orderDate,
             @RequestParam String shipAddress1,
             @RequestParam String shipAddress2,
             @RequestParam String shipCity,
@@ -73,12 +73,12 @@ public class OrderController {
             @RequestParam String billCountry,
             @RequestParam String billToFirstName,
             @RequestParam String billToLastName,
-            @RequestParam String courier,
+            @RequestParam(required = false) String courier,
             @RequestParam String creditCard,
             @RequestParam String expiryDate,
             @RequestParam String cardType,
-            @RequestParam String locale,
-            @RequestParam String status
+            @RequestParam(required = false) String locale,
+            @RequestParam(required = false) String status
     ){
         Orders orders = new Orders();
         orders.setOrderId(0);

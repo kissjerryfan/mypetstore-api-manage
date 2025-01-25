@@ -16,7 +16,7 @@ public class OrderStatus {
     private int orderid;
     @TableField(value = "linenum")
     private int linenum;
-    private Date timestamp;
+    private String timestamp;
     private String status;
 
 }

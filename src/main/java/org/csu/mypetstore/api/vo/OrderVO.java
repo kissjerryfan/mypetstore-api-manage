@@ -11,7 +11,7 @@ import java.util.List;
 public class OrderVO {
     private int orderId;
     private String username;
-    private Date orderDate;
+    private String orderDate;
 
     private String shipAddress1;
     private String shipAddress2;
